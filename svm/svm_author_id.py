@@ -34,7 +34,7 @@ features_train = features_train[:len(features_train)/100]
 labels_train = labels_train[:len(labels_train)/100]
 
 clf.fit(features_train, labels_train)
-pred = clf.predict([features_test[10]])
+pred = clf.predict(features_test)
 
 print accuracy_score(pred, labels_test)
 
